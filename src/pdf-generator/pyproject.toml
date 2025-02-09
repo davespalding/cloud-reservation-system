@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pdfgen"
+version = "0.1.0"
+description = ""
+authors = ["David <finnspalding@gmail.com>"]
+readme = "../../README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fpdf2 = "^2.8.2"
+tornado = "^6.4.2"
+pyyaml = "^6.0.2"
+minio = "^7.2.15"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

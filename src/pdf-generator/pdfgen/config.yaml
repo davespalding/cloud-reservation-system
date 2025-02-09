@@ -1,0 +1,12 @@
+# pdf-generator settings
+service:
+  port: 8891
+
+# minio
+s3:
+  addr: localhost
+  port: 9000
+  bucket: vouchers
+  access_key: minioadmin
+  secret_key: minioadmin
+  secure: False

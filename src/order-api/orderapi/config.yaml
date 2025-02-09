@@ -1,0 +1,27 @@
+# store settings
+store:
+  stock:
+    limit: 1000
+
+# order-api settings
+api:
+  port: 8890
+
+# pdf-generator service settings
+pdfgen:
+  addr: localhost
+  port: 8891
+
+# database settings
+db:
+  addr: localhost
+  port: 5432
+  user: postgres
+  passw: postgres
+  db: reserv
+
+# cache settings
+cache:
+  addr: localhost
+  port: 6379
+  db: 0
