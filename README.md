@@ -57,8 +57,10 @@ List of features/improvements that could (or should) be implemented, but are not
 * Unit tests
 * CI automation
 * DB schema management by order API
+* Remote storage
 * An actual design for the voucher look
     * Though I would love it; I'm not a graphical designer.
+* TLS traffic encryption
 
 ## Possible future improvements
 List of future improvements that I'm interested in implementing/investigating, but currently not planning to:
@@ -71,6 +73,12 @@ List of future improvements that I'm interested in implementing/investigating, b
     * I would like to investigate if the cache service could be updated from PostgreSQL through CDC instead of the order API being responsible for this. Not sure though if using CDC here would be worth it.
 * Monitoring
     * Centralized logging and monitoring with something like OpenSearch, Prometheus, Grafana, etc...
+* Init pods
+    * Init pods ensuring DB and cache schemas when starting a new instance of order API
+* Error handling for failed services
+    * Currently everything assumes that services are up and won't fail. [What could possibly go wrong?](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/)
+* Asynchronous handling for PDF generator
+    * Currently order API waits and blocks when sending a HTTP request to the PDF generator service.
 * End-to-end testing
 
 ## TODO
